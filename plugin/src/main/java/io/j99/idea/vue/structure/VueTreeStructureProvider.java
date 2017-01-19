@@ -30,8 +30,8 @@ public class VueTreeStructureProvider implements TreeStructureProvider {
             } else if (child instanceof PsiDirectoryNode) {
                 VirtualFile file = ((PsiDirectoryNode) child).getVirtualFile();
                 if (file == null) continue;
-                if (".idea".equals(file.getName())) continue;
-                if ("node_modules".equals(file.getName())) continue;
+//                if (".idea".equals(file.getName())) continue;
+//                if ("node_modules".equals(file.getName())) continue;
             } else {
                 System.out.println(child.getClass());
             }

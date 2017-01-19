@@ -12,12 +12,6 @@ intellij {
     sameSinceUntilBuild false
 //    downloadSources !Boolean.valueOf(System.getenv('CI'))
     downloadSources false
-    publish {
-        username 'henjue'
-        pluginId '8123'
-        password Boolean.valueOf(System.getenv('CI')) ? System.getenv('PLUGIN_PASSWORD') : PLUGIN_PASSWORD
-        channel System.getenv('PLUGIN_CHANNEL') ?: ''
-    }
 }
 dependencies {
     compile group: 'org.codehaus.jettison', name: 'jettison', version: '1.3.7'
